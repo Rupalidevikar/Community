@@ -1,0 +1,7 @@
+{
+  "name": "Community",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

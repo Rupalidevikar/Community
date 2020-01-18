@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-searchbar showCancelButton="always"></ion-searchbar>
+    <ion-searchbar showCancelButton="never"></ion-searchbar>
+    <ion-searchbar showCancelButton="focus"></ion-searchbar> -->
+    <ion-searchbar color="danger"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="back_color">
+  <ion-segment color="secondary" (ionChange)="segmentChanged($event)"  class="seg_style" >
+    <ion-segment-button class="Seg_btn" checked >
+      <ion-label align-self:center><b>Create Event</b></ion-label>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-label align-self:center><b>Past Events</b></ion-label>
+    </ion-segment-button>
+    <!-- <ion-segment-button>
+      <ion-label>Map</ion-label>
+    </ion-segment-button> -->
+  </ion-segment>
+</ion-content>
