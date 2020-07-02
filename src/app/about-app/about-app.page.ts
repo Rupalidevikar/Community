@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about-app',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutAppPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    public router: Router,
+  ) { }
+
+
+  goBack() {
+    this.router.navigate(['./tabs/tab4']);
+  }
 
   ngOnInit() {
   }

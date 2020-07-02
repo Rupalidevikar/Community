@@ -1,0 +1,53 @@
+<ion-header class="head">
+  <ion-toolbar class="header_color">
+    <ion-title>
+      CommunityApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="back_color">
+  <div class="ion-padding">
+    
+      <form [formGroup]="createForm">
+          <ion-grid>
+            <ion-row color="primary" class="justify-content-center">
+              <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
+
+                <div text-center>
+                  <h3 class="text_style"><b>Create Event</b> </h3>
+                </div>
+
+                <div class="ion-padding">
+                  <br>
+
+                  <ion-item class="textbox_style"><ion-icon name="person"></ion-icon>&nbsp;
+                    <ion-input   type="text" placeholder="Organizer's Name"  required></ion-input>
+                  </ion-item><br>
+
+                  <ion-item class="textbox_style"><ion-icon name="contact"></ion-icon>&nbsp;
+                    <ion-input  type="number" placeholder="contact number"  required></ion-input>
+                  </ion-item><br>
+                 
+                  <ion-item class="textbox_style"><ion-icon name="pin"></ion-icon>&nbsp;
+                    <ion-input  type="text" placeholder="address"  required></ion-input>
+                  </ion-item>  <br> 
+
+                  <ion-item class="textbox_style"><ion-icon name="happy"></ion-icon>&nbsp;
+                    <ion-input  type="text" placeholder=" Name of event "  required></ion-input>
+                  </ion-item><br>
+                    
+                    
+                    <br class="br_line">
+                    <div >
+                      <ion-button color="primary" size="medium" class="send_center" shape="round" (click)="create()" Responsive>Post</ion-button>
+                    </div>
+                     
+    
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </form>
+      </div>
+  </ion-content>                  

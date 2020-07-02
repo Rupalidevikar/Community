@@ -1,0 +1,42 @@
+<ion-header class="head">
+  <ion-toolbar class="header_color">
+    <ion-title>Register1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="back_color">
+  <div class="ion-padding">
+
+    <form [formGroup]="RegisterForm">
+      <ion-grid>
+        <ion-row color="primary" class="justify-content-center">
+          <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
+           
+            <div class="ion-padding">
+             
+              <ion-item class="textbox_style"><ion-icon name="pin"></ion-icon>&nbsp;
+                <ion-input  type="text" placeholder="address"  required></ion-input>
+              </ion-item>  <br> 
+
+              <ion-item class="textbox_style"><ion-icon name="add-circle-outline"></ion-icon>&nbsp;
+                <ion-input  type="text" placeholder=" discription "  required></ion-input>
+              </ion-item>
+
+             
+              <br class="br_line">
+    
+              <div>
+                <ion-button color="success" size="medium" class="send_center" shape="round" (click)="Next()"  Responsive>Next</ion-button>
+                <ion-button color="success" size="medium" class="send_center" shape="round" (click)="back()" Responsive>Back</ion-button>
+              </div>
+
+            </div>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </div>
+
+
+</ion-content>

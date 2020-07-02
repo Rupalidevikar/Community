@@ -1,3 +1,8 @@
+.header_color{
+  --ion-background-color : rgb(55, 140, 238);
+  color: aliceblue;
+}
+
 .welcome-card img {
   max-height: 32vh;
   overflow: hidden;
@@ -7,18 +12,27 @@
   
   
 }
+
+.fab{
+    
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+  
+}
 .notification{
   margin-bottom: auto;
   margin-right: -30%;
   
 }
-// .back_color{
-//   //--ion-background-color : rgb(53, 158, 177);
-//     //height: 200px;
-//     //background-color: rgb(160, 206, 214); /* For browsers that do not support gradients */
-//     //background-image: linear-gradient(rgb(53, 158, 177),white); /* Standard syntax (must be last) */
-//         --background: linear-gradient(197deg, #e07162 0%, rgb(228, 116, 112) 13.5%, rgb(236, 79, 119) 43.33%, rgb(212, 57, 70) 100%);
-    
+
+.ion-icon{
+  font-size: 25px;
+}
+
+.send_center{
   
-// }
+  float: right;
+  
+}
+
 

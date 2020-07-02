@@ -1,0 +1,51 @@
+<ion-header class="head">
+  <ion-toolbar class="header_color">
+    <ion-title>Register1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="back_color">
+  <div class="ion-padding">
+
+    <form [formGroup]="RegisterForm">
+      <ion-grid>
+        <ion-row color="primary" class="justify-content-center">
+          <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
+           
+            <div class="ion-padding">
+              
+                                      
+                    <ion-item class="textbox_style"><ion-icon name="happy"></ion-icon>&nbsp;
+                      <ion-label>User Intrests</ion-label>
+                      <ion-select multiple="true" cancelText="No" okText="Yes">
+                        <ion-select-option value="tracking">Mountain Tracking</ion-select-option>
+                        <ion-select-option value="programming">Information Technology</ion-select-option>
+                        <ion-select-option value="racing">Marathon</ion-select-option>
+                        <ion-select-option value="cooking">Foodie</ion-select-option>
+                        <ion-select-option value="astro">Astronomy</ion-select-option>
+                        <ion-select-option value="fashion">Fashion</ion-select-option>
+                        <ion-select-option value="music">Listining Songs</ion-select-option>
+                        <ion-select-option value="travel">Traveling</ion-select-option>
+                        <ion-select-option value="environmental">Environment lover</ion-select-option>
+                        <ion-select-option value="movie">watching movies</ion-select-option>
+                        <ion-select-option value="others">Others</ion-select-option>
+                      </ion-select>
+                    </ion-item>
+                  
+                  <br>
+    
+              <div>
+                <ion-button  color="success" size="medium" class="send_center" shape="round" (click)="onNext()"  Responsive>Next</ion-button>
+                <ion-button  color="success" size="medium" class="send_center" shape="round" (click)="back()" Responsive>Back</ion-button>
+              </div>
+
+            </div>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </div>
+
+
+</ion-content>

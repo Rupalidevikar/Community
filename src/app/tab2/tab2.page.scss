@@ -1,12 +1,23 @@
-// // .seg_style {
-// //     --background-color: rgb(212, 23, 102);
-// //     --padding-bottom: 0px;
-// //     --padding-top: 0px;
-// //     --margin-bottom: 0px;
-// //     --margin-top: 0px;
-    
+.header_color{
+  --ion-background-color : rgb(55, 140, 238);
+  color: aliceblue;
+}
+ 
+ .fontStyle {
+    // --background-color: rgb(212, 23, 102);
+    // --padding-bottom: 0px;
+    // --padding-top: 0px;
+    // --margin-bottom: 0px;
+    // --margin-top: 0px;\
 
-// //   }
+    font-size: x-small;
+
+  }
+
+  .seg_style{
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+  }
 
 // //  .seg_btn{
 // //     -background: rgb(212, 23, 102);

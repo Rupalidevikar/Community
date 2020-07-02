@@ -1,16 +1,20 @@
+.back_color{
+    --background: #ffffff;
+  }
+  
 .header_color{
-    --ion-background-color : rgb(103, 51, 199);
+    --ion-background-color : rgb(55, 140, 238);
     color: aliceblue;
 }
-.back_color{
-    --background: #fff url('../../assets/event1.jpg') no-repeat center center / cover;
+// .back_color{
+//     --background: #fff url('../../assets/event1.jpg') no-repeat center center / cover;
 
-}
+// }
 .send_center{
-   color: #ffffff;
+   color: #2e8ae0;
 }
 .forget_style{
-    color: #ffffff;
+    color: #000000;
 }
 .textbox_style{
     --ion-background-color :  rgb(242, 247, 245);

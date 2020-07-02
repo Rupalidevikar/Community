@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>adminRegister</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="back_color">
+  <div class="ion-padding">
+    
+      <form [formGroup]="RegisterForm">
+          <ion-grid>
+            <ion-row color="primary" class="justify-content-center">
+              <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
+
+                <div text-center>
+                  <h3 class="text_style"><b>Register</b> </h3>
+                </div>
+
+                <div class="ion-padding">
+                  <ion-item class="textbox_style"><ion-icon name="person"></ion-icon>&nbsp;
+                    <ion-input formControlName="email" type="email" placeholder="Your@email.com"  required></ion-input>
+                  </ion-item>
+                  <br>
+
+                   <ion-item class="textbox_style"><ion-icon name="person"></ion-icon>&nbsp;
+                    <ion-input   type="text" placeholder="Admin Name"  required></ion-input>
+                  </ion-item><br>
+
+                                                                     
+                     <ion-item class="textbox_style"><ion-icon name="lock"></ion-icon>&nbsp;
+                        <ion-input formControlName="password" type="passwordType" placeholder="Password"  required></ion-input>
+                        <ion-icon name="eye-off" [name]="passwordicon" class="passwordicon" (click)='hideshowpassword()' slot='end'></ion-icon>
+    
+                      </ion-item> 
+                    <br class="br_line">
+                    <div >
+                      <ion-button color="success" size="medium" class="send_center" shape="round" (click)="submit()" Responsive>Signup</ion-button>
+                    </div>
+
+                     <div class="forget_style">
+                        <br>
+                        Already Registered?
+                        <a href="" [routerLink]="['/login']">login Here</a>
+                    </div>                                                  
+    
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </form>
+      </div>
+  </ion-content>                  
+

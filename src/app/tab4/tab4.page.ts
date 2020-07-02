@@ -25,12 +25,20 @@ export class Tab4Page implements OnInit {
     this.router.navigate(['payments']);
   }
 
+  qrCode() {
+    this.router.navigate(['qrcodegenerator']);
+  }
+
   Help() {
     this.router.navigate(['help-page']);
   }
 
   AboutApp() {
     this.router.navigate(['about-app']);
+  }
+
+  logout() {
+    this.router.navigate(['home']);
   }
   ngOnInit() {
   }

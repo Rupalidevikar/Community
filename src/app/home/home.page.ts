@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {FormGroup, FormBuilder, FormControl, Validators} from '@angular/forms';
-import {ToastController} from '@ionic/angular';
+import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
+import { ToastController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,44 +9,30 @@ import {ToastController} from '@ionic/angular';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
-  public RegisterForm: FormGroup;
-  passwordshow: false;
-  // tslint:disable-next-line: ban-types
-  passwordicon: String;
-  router: any;
-  // tslint:disable-next-line: ban-types
-  password: String = 'password';
+  public selectForm: FormGroup;
+
   constructor(
     public formBuilder: FormBuilder,
     public toastController: ToastController,
-
+    private router: Router,
   ) {
-      this.RegisterForm = formBuilder.group
+      this.selectForm = formBuilder.group
     ({
-      email: new FormControl('', Validators.compose
-      ([Validators.required,
-      Validators.pattern('^.+@.+\\..+$')
-      ])),
-
-      password: ['', [Validators.required, Validators.minLength(8)]],
-
-
 
     });
 
    }
 
-   onregister() {
-
-    this.router.navigate(['/login']);
+   communitySide() {
+    this.router.navigate(['comregistration']);
   }
 
-  hideshowpassword() {
+  userSide() {
+    this.router.navigate(['user-registration']);
+  }
 
-    this.password = this.password === 'password' ? 'text' : 'password';
-
-    this.passwordicon = this.passwordicon === 'eye' ? 'eye-off' : 'eye';
-
+  adminSide() {
+    this.router.navigate(['admin-register']);
   }
 
   ngOnInit() {

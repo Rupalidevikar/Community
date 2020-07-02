@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-manage-notification',
@@ -7,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManageNotificationPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    public router: Router,
+  ) { }
 
+  goBack() {
+    this.router.navigate(['./tabs/tab4']);
+  }
   ngOnInit() {
   }
 
